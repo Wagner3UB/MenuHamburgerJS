@@ -1,0 +1,12 @@
+Hello there! Welcome to my litle world!
+
+This is a simple open/close JavaScript hamburger Menu.
+
+⚠ ⚠ First of all, becareful if you will add the reset.css in your current work, it maybe interfere in your layout! 
+
+- the "nav" part will be your hole menu, desk, tablet and mobile. I recomended this menu type only for portrait tablet mode and mobiles. So you will need add a mediaQuery to set the div .hamburger_box to be showed only under 768px
+
+- you can set the width and height of the box menu on style.css under .hamburger_list ul
+
+- you can set the position of the first menu element under .hamburger_list ul a:first-child
+}
