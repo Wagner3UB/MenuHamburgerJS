@@ -1,0 +1,79 @@
+*{
+  font: regular 20px/20px Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.hamburger_icon{
+  margin-left: 5%;
+  cursor: pointer;
+}
+.hamburger_icon span{
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin-bottom: 3px;
+  background-color: #4de6e6;
+  border-radius: 3px;
+  transition: ease-in-out .3s all;
+}
+.hamburger_icon span.ativo:first-of-type{
+  transform: translate(0, 8px) rotate(45deg);
+}
+.hamburger_icon span.ativo:last-of-type{
+  transform: translate(0, -8px) rotate(-45deg);
+}
+.hamburger_icon span.opacity.ativo{
+  opacity: 0;
+}
+
+.hamburger_list{
+  position: relative;
+}
+
+.hamburger_list ul{
+  position: absolute;
+  left: -100%;
+  background-color: #4de6e6;
+  margin-top: 20px;
+  width: 50%;
+  height: 100vh;
+  transition: ease-in-out .3s all;
+}
+.hamburger_list ul.ativo{
+  left: 0;
+}
+.hamburger_list ul a:first-child{
+  margin-top: 50%;
+}
+.hamburger_list ul a{
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
+.hamburger_list ul hr{
+  width: 30%;
+  height: 3px;
+  background-color: black;
+  margin: auto;
+}
+.hamburger_list ul a:hover + hr{
+  width: 100%;
+  transition: ease-in-out .3s all;
+
+}
+.hamburger_list ul a:hover, .hamburger_list ul a:active{
+  background-color: aliceblue;
+}
+section{
+  height: 100vh;
+}
